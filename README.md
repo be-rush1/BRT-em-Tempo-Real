@@ -30,7 +30,7 @@ Este projeto é um sistema ainda em desenvolvimento composto por um frontend em 
 
 ### Backend - Spring Boot
 
-1. Certifique que você tenha o Maven instalado.
+1. Certifique que você tenha o [Maven](https://maven.apache.org/install.html) instalado.
 2. Dentro do diretório do projeto rode o seguinte comando:
 ```bash
 cd backend
