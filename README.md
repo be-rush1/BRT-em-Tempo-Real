@@ -45,7 +45,7 @@ mvn spring-boot:run
 
 ### Frontend - React
 
-1. Em outro terminal acesse a pasta do React:
+1. Em outro terminal, acesse a pasta do React:
 
 ```bash
 cd frontend
