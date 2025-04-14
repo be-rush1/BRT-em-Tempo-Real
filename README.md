@@ -26,7 +26,7 @@ Este projeto é um sistema ainda em desenvolvimento composto por um frontend em 
 
 ---
 
-## 🚀 Como rodar o projeto
+## 🚀 Como rodar o projeto localmente
 
 ### Backend - Spring Boot
 
