@@ -36,9 +36,9 @@ Este projeto é um sistema ainda em desenvolvimento composto por um frontend em 
 cd backend
 ```
 3. E depois rode:
-   ```bash
-      mvn spring-boot:run
-    ```
+```bash
+mvn spring-boot:run
+```
 > 🔧 O backend roda por padrão na porta `8080`.
 
 ---
