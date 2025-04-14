@@ -17,9 +17,10 @@ Este projeto é um sistema ainda em desenvolvimento composto por um frontend em 
 
  /frontend (React)
   └── src/
+      └── services
+             ├── api.js # Configuração base do axios  
       ├── App.js       # Componente principal
       ├── List.js      # Componente que consome a API
-      ├── api.js       # Configuração base do axios
       └── ...
 ```
 
