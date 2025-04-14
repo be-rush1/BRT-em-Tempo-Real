@@ -48,13 +48,19 @@ mvn spring-boot:run
 1. Em outro terminal, acesse a pasta do React:
 
 ```bash
-cd frontend
+cd frontend/frontendOnibus/bus-app
 ```
 
-2. Instale as dependências:
+2. Instale as dependências (certifique de estar no diretório de package.json): 
 
 ```bash
 npm install
+```
+```bash
+npm install react-leaflet leaflet
+```
+```bash
+npm install @mui/material @emotion/react @emotion/styled
 ```
 
 3. Rode o servidor de desenvolvimento:
@@ -71,7 +77,6 @@ npm start
 
 - Você pode digitar o número de uma linha de ônibus (ex: 22) na barra de busca.
 - Ao clicar no botão de buscar, será feita uma requisição para o backend.
-- Os dados da linha (linha, trajeto, latitude, longitude) serão exibidos em uma lista.
 - A localização dos ônibus é atualizada automaticamente a cada 10 segundos.
 
 ---
