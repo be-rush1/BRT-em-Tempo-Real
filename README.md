@@ -30,10 +30,15 @@ Este projeto é um sistema ainda em desenvolvimento composto por um frontend em 
 
 ### Backend - Spring Boot
 
-1. Abra o projeto no Eclipse ou IntelliJ.
-2. Verifique se o endpoint `/bus?Linha=XYZ` está funcionando.
-3. Rode o projeto com a classe `DemoApplication.java`.
-
+1. Certifique que você tenha o Maven instalado.
+2. Dentro do diretório do projeto rode o seguinte comando:
+```bash
+cd backend
+```
+3. E depois rode:
+   ```bash
+      mvn spring-boot:run
+    ```
 > 🔧 O backend roda por padrão na porta `8080`.
 
 ---
