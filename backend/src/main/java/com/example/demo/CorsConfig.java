@@ -13,7 +13,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**") // aplica a todos os endpoints
-                        .allowedOrigins("http://localhost:3000") // origem do React
+                        .allowedOrigins("https://brt-em-tempo-real2.onrender.com") // origem do React
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true);
