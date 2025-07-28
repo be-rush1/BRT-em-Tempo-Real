@@ -2,20 +2,24 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
+import icon from 'leaflet/dist/images/marker-icon.png';
+import iconRetina from 'leaflet/dist/images/marker-icon-2x.png';
+import shadow from 'leaflet/dist/images/marker-shadow.png';
+
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
-  iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
-  iconUrl: require('leaflet/dist/images/marker-icon.png'),
-  shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
+  iconRetinaUrl: iconRetina,
+  iconUrl: icon,
+  shadowUrl: shadow,
 });
 
 function Mapa({ coordenadas }) {
   const center = coordenadas.length
     ? [
         coordenadas.reduce((acc, cur) => acc + cur.latitude, 0) / coordenadas.length,
-        coordenadas.reduce((acc, cur) => acc + cur.longitude, 0) / coordenadas.length
+        coordenadas.reduce((acc, cur) => acc + cur.longitude, 0) / coordenadas.length,
       ]
-    : [0, 0]; // fallback
+    : [0, 0]; // fallback se lista estiver vazia
 
   return (
     <div style={{ height: '500px', width: '100%', marginTop: '20px' }}>
